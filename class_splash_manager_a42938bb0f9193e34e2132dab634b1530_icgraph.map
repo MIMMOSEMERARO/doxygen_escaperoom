@@ -1,0 +1,5 @@
+<map id="SplashManager.VaiAlGioco" name="SplashManager.VaiAlGioco">
+<area shape="rect" id="Node000001" title="Coroutine che gestisce l&#39;attesa temporizzata e il caricamento della scena." alt="" coords="197,5,376,32"/>
+<area shape="rect" id="Node000002" href="$class_splash_manager.html#a70fc4679d4d31595b452aca12f94934e" title="Avvia la coroutine di caricamento all&#39;inizio del ciclo di vita dello script." alt="" coords="5,5,149,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,21,149,21,149,16,181,16"/>
+</map>
