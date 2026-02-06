@@ -1,0 +1,210 @@
+\doxysection{timerscript Class Reference}
+\hypertarget{classtimerscript}{}\label{classtimerscript}\index{timerscript@{timerscript}}
+
+
+Gestisce il conto alla rovescia, il sistema di pausa e l\textquotesingle{}attivazione del Game Over.  
+
+
+
+
+Inheritance diagram for timerscript\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{classtimerscript__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for timerscript\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{classtimerscript__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classtimerscript_adf140f09e85e4b2cec94a1a50f64b3dc}{Toggle\+Pause}} ()
+\begin{DoxyCompactList}\small\item\em Alterna lo stato di pausa del gioco, agendo sul Time.\+time\+Scale. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classtimerscript_a197487f33363870b2c650ed9e22e52c9}{Stop\+Timer\+And\+Finish}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classtimerscript_acfe7a20d24d329e8011473afdc961b21}{Start}} ()
+\item 
+IEnumerator \mbox{\hyperlink{classtimerscript_a719d9c083ce92f3e1a429f6a0b782fa5}{time\+IEn}} ()
+\begin{DoxyCompactList}\small\item\em Coroutine che decrementa il tempo ogni frame. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classtimerscript_afa674b9fa075773b95bd248798e20b70}{open\+Game\+Over\+Panel}} ()
+\begin{DoxyCompactList}\small\item\em Attiva il pannello di fine gioco e avvia la transizione scenica. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Game\+Object \mbox{\hyperlink{classtimerscript_a0820d57f6bbaa6b353b54ec651123e88}{Game\+Over\+\_\+panel}}
+\item 
+Game\+Object \mbox{\hyperlink{classtimerscript_ad4d838156d1b27f91dbcf229442ad57b}{panel\+\_\+pausa}}
+\item 
+Text\+Mesh\+Pro\+UGUI \mbox{\hyperlink{classtimerscript_ac9157b046703f225a470cc7a08f96490}{timertext}}
+\item 
+float \mbox{\hyperlink{classtimerscript_a56fedfad90d14014ea0d30d66fb36718}{Duration}}
+\item 
+float \mbox{\hyperlink{classtimerscript_aec100aca8e28bda46ad2415472c17ac4}{current\+Time}}
+\item 
+bool \mbox{\hyperlink{classtimerscript_a5a423f5db6e0f5741bf371d1bafbb159}{is\+Timer\+Running}} = false
+\item 
+bool \mbox{\hyperlink{classtimerscript_abb9065cc0b09a277c760d685c36b40b6}{is\+Paused}} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Gestisce il conto alla rovescia, il sistema di pausa e l\textquotesingle{}attivazione del Game Over. 
+
+\label{doc-func-members}
+\Hypertarget{classtimerscript_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtimerscript_afa674b9fa075773b95bd248798e20b70}\index{timerscript@{timerscript}!openGameOverPanel@{openGameOverPanel}}
+\index{openGameOverPanel@{openGameOverPanel}!timerscript@{timerscript}}
+\doxysubsubsection{\texorpdfstring{openGameOverPanel()}{openGameOverPanel()}}
+{\footnotesize\ttfamily \label{classtimerscript_afa674b9fa075773b95bd248798e20b70} 
+void timerscript.\+open\+Game\+Over\+Panel (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Attiva il pannello di fine gioco e avvia la transizione scenica. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtimerscript_afa674b9fa075773b95bd248798e20b70_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtimerscript_afa674b9fa075773b95bd248798e20b70_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classtimerscript_acfe7a20d24d329e8011473afdc961b21}\index{timerscript@{timerscript}!Start@{Start}}
+\index{Start@{Start}!timerscript@{timerscript}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily \label{classtimerscript_acfe7a20d24d329e8011473afdc961b21} 
+void timerscript.\+Start (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtimerscript_acfe7a20d24d329e8011473afdc961b21_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classtimerscript_a197487f33363870b2c650ed9e22e52c9}\index{timerscript@{timerscript}!StopTimerAndFinish@{StopTimerAndFinish}}
+\index{StopTimerAndFinish@{StopTimerAndFinish}!timerscript@{timerscript}}
+\doxysubsubsection{\texorpdfstring{StopTimerAndFinish()}{StopTimerAndFinish()}}
+{\footnotesize\ttfamily \label{classtimerscript_a197487f33363870b2c650ed9e22e52c9} 
+void timerscript.\+Stop\+Timer\+And\+Finish (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtimerscript_a719d9c083ce92f3e1a429f6a0b782fa5}\index{timerscript@{timerscript}!timeIEn@{timeIEn}}
+\index{timeIEn@{timeIEn}!timerscript@{timerscript}}
+\doxysubsubsection{\texorpdfstring{timeIEn()}{timeIEn()}}
+{\footnotesize\ttfamily \label{classtimerscript_a719d9c083ce92f3e1a429f6a0b782fa5} 
+IEnumerator timerscript.\+time\+IEn (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Coroutine che decrementa il tempo ogni frame. 
+
+
+\begin{DoxyImageNoCaption}
+  \mbox{\includegraphics[width=\textwidth,height=\textheight/2,keepaspectratio=true]{dot_inline_dotgraph_12}}
+\end{DoxyImageNoCaption}
+ Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtimerscript_a719d9c083ce92f3e1a429f6a0b782fa5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{classtimerscript_a719d9c083ce92f3e1a429f6a0b782fa5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classtimerscript_adf140f09e85e4b2cec94a1a50f64b3dc}\index{timerscript@{timerscript}!TogglePause@{TogglePause}}
+\index{TogglePause@{TogglePause}!timerscript@{timerscript}}
+\doxysubsubsection{\texorpdfstring{TogglePause()}{TogglePause()}}
+{\footnotesize\ttfamily \label{classtimerscript_adf140f09e85e4b2cec94a1a50f64b3dc} 
+void timerscript.\+Toggle\+Pause (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Alterna lo stato di pausa del gioco, agendo sul Time.\+time\+Scale. 
+
+
+\begin{DoxyImageNoCaption}
+  \mbox{\includegraphics[width=\textwidth,height=\textheight/2,keepaspectratio=true]{dot_inline_dotgraph_13}}
+\end{DoxyImageNoCaption}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{classtimerscript_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtimerscript_aec100aca8e28bda46ad2415472c17ac4}\index{timerscript@{timerscript}!currentTime@{currentTime}}
+\index{currentTime@{currentTime}!timerscript@{timerscript}}
+\doxysubsubsection{\texorpdfstring{currentTime}{currentTime}}
+{\footnotesize\ttfamily \label{classtimerscript_aec100aca8e28bda46ad2415472c17ac4} 
+float timerscript.\+current\+Time\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classtimerscript_a56fedfad90d14014ea0d30d66fb36718}\index{timerscript@{timerscript}!Duration@{Duration}}
+\index{Duration@{Duration}!timerscript@{timerscript}}
+\doxysubsubsection{\texorpdfstring{Duration}{Duration}}
+{\footnotesize\ttfamily \label{classtimerscript_a56fedfad90d14014ea0d30d66fb36718} 
+float timerscript.\+Duration\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classtimerscript_a0820d57f6bbaa6b353b54ec651123e88}\index{timerscript@{timerscript}!GameOver\_panel@{GameOver\_panel}}
+\index{GameOver\_panel@{GameOver\_panel}!timerscript@{timerscript}}
+\doxysubsubsection{\texorpdfstring{GameOver\_panel}{GameOver\_panel}}
+{\footnotesize\ttfamily \label{classtimerscript_a0820d57f6bbaa6b353b54ec651123e88} 
+Game\+Object timerscript.\+Game\+Over\+\_\+panel\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classtimerscript_abb9065cc0b09a277c760d685c36b40b6}\index{timerscript@{timerscript}!isPaused@{isPaused}}
+\index{isPaused@{isPaused}!timerscript@{timerscript}}
+\doxysubsubsection{\texorpdfstring{isPaused}{isPaused}}
+{\footnotesize\ttfamily \label{classtimerscript_abb9065cc0b09a277c760d685c36b40b6} 
+bool timerscript.\+is\+Paused = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classtimerscript_a5a423f5db6e0f5741bf371d1bafbb159}\index{timerscript@{timerscript}!isTimerRunning@{isTimerRunning}}
+\index{isTimerRunning@{isTimerRunning}!timerscript@{timerscript}}
+\doxysubsubsection{\texorpdfstring{isTimerRunning}{isTimerRunning}}
+{\footnotesize\ttfamily \label{classtimerscript_a5a423f5db6e0f5741bf371d1bafbb159} 
+bool timerscript.\+is\+Timer\+Running = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classtimerscript_ad4d838156d1b27f91dbcf229442ad57b}\index{timerscript@{timerscript}!panel\_pausa@{panel\_pausa}}
+\index{panel\_pausa@{panel\_pausa}!timerscript@{timerscript}}
+\doxysubsubsection{\texorpdfstring{panel\_pausa}{panel\_pausa}}
+{\footnotesize\ttfamily \label{classtimerscript_ad4d838156d1b27f91dbcf229442ad57b} 
+Game\+Object timerscript.\+panel\+\_\+pausa\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classtimerscript_ac9157b046703f225a470cc7a08f96490}\index{timerscript@{timerscript}!timertext@{timertext}}
+\index{timertext@{timertext}!timerscript@{timerscript}}
+\doxysubsubsection{\texorpdfstring{timertext}{timertext}}
+{\footnotesize\ttfamily \label{classtimerscript_ac9157b046703f225a470cc7a08f96490} 
+Text\+Mesh\+Pro\+UGUI timerscript.\+timertext\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/semer/\+Documents/\+Git\+Hub/\+Escape\+Room/\+Assets/scripts/\mbox{\hyperlink{timerscript_8cs}{timerscript.\+cs}}\end{DoxyCompactItemize}

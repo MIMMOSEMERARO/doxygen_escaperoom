@@ -1,0 +1,119 @@
+\doxysection{Splash\+Manager Class Reference}
+\hypertarget{class_splash_manager}{}\label{class_splash_manager}\index{SplashManager@{SplashManager}}
+
+
+Gestisce la schermata iniziale (Splash Screen) con un passaggio temporizzato alla scena successiva.  
+
+
+
+
+Inheritance diagram for Splash\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{class_splash_manager__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Splash\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{class_splash_manager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_splash_manager_a911f133ab46909aad74faf16862c7ccb}{attesa}} = 3.\+5f
+\begin{DoxyCompactList}\small\item\em Tempo di attesa in secondi prima di cambiare scena. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_splash_manager_a5bcd69b619faee4b7bbf7cbc0d515eb7}{nome\+Scena\+Gioco}} = "{}Main"{}
+\begin{DoxyCompactList}\small\item\em Nome della scena da caricare dopo lo splash screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_splash_manager_a70fc4679d4d31595b452aca12f94934e}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Avvia la coroutine di caricamento all\textquotesingle{}inizio del ciclo di vita dello script. \end{DoxyCompactList}\item 
+IEnumerator \mbox{\hyperlink{class_splash_manager_a42938bb0f9193e34e2132dab634b1530}{Vai\+Al\+Gioco}} ()
+\begin{DoxyCompactList}\small\item\em Coroutine che gestisce l\textquotesingle{}attesa temporizzata e il caricamento della scena. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Gestisce la schermata iniziale (Splash Screen) con un passaggio temporizzato alla scena successiva. 
+
+\label{doc-func-members}
+\Hypertarget{class_splash_manager_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_splash_manager_a70fc4679d4d31595b452aca12f94934e}\index{SplashManager@{SplashManager}!Start@{Start}}
+\index{Start@{Start}!SplashManager@{SplashManager}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily \label{class_splash_manager_a70fc4679d4d31595b452aca12f94934e} 
+void Splash\+Manager.\+Start (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Avvia la coroutine di caricamento all\textquotesingle{}inizio del ciclo di vita dello script. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_splash_manager_a70fc4679d4d31595b452aca12f94934e_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_splash_manager_a42938bb0f9193e34e2132dab634b1530}\index{SplashManager@{SplashManager}!VaiAlGioco@{VaiAlGioco}}
+\index{VaiAlGioco@{VaiAlGioco}!SplashManager@{SplashManager}}
+\doxysubsubsection{\texorpdfstring{VaiAlGioco()}{VaiAlGioco()}}
+{\footnotesize\ttfamily \label{class_splash_manager_a42938bb0f9193e34e2132dab634b1530} 
+IEnumerator Splash\+Manager.\+Vai\+Al\+Gioco (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Coroutine che gestisce l\textquotesingle{}attesa temporizzata e il caricamento della scena. 
+
+
+\begin{DoxyImageNoCaption}
+  \mbox{\includegraphics[width=\textwidth,height=\textheight/2,keepaspectratio=true]{dot_inline_dotgraph_8}}
+\end{DoxyImageNoCaption}
+ Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_splash_manager_a42938bb0f9193e34e2132dab634b1530_icgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_splash_manager_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_splash_manager_a911f133ab46909aad74faf16862c7ccb}\index{SplashManager@{SplashManager}!attesa@{attesa}}
+\index{attesa@{attesa}!SplashManager@{SplashManager}}
+\doxysubsubsection{\texorpdfstring{attesa}{attesa}}
+{\footnotesize\ttfamily \label{class_splash_manager_a911f133ab46909aad74faf16862c7ccb} 
+float Splash\+Manager.\+attesa = 3.\+5f}
+
+
+
+Tempo di attesa in secondi prima di cambiare scena. 
+
+\Hypertarget{class_splash_manager_a5bcd69b619faee4b7bbf7cbc0d515eb7}\index{SplashManager@{SplashManager}!nomeScenaGioco@{nomeScenaGioco}}
+\index{nomeScenaGioco@{nomeScenaGioco}!SplashManager@{SplashManager}}
+\doxysubsubsection{\texorpdfstring{nomeScenaGioco}{nomeScenaGioco}}
+{\footnotesize\ttfamily \label{class_splash_manager_a5bcd69b619faee4b7bbf7cbc0d515eb7} 
+string Splash\+Manager.\+nome\+Scena\+Gioco = "{}Main"{}}
+
+
+
+Nome della scena da caricare dopo lo splash screen. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/semer/\+Documents/\+Git\+Hub/\+Escape\+Room/\+Assets/scripts/\mbox{\hyperlink{splash_screen__manager_8cs}{splash\+Screen\+\_\+manager.\+cs}}\end{DoxyCompactItemize}

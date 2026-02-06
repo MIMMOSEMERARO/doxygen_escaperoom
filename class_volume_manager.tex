@@ -1,0 +1,156 @@
+\doxysection{Volume\+Manager Class Reference}
+\hypertarget{class_volume_manager}{}\label{class_volume_manager}\index{VolumeManager@{VolumeManager}}
+
+
+Gestisce il volume audio del gioco, sincronizzando Slider, Audio\+Mixer e salvataggi locali.  
+
+
+
+
+Inheritance diagram for Volume\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{class_volume_manager__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Volume\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{class_volume_manager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_volume_manager_aa56861472a6a3d54e7d36bceb05e0d80}{Cambia\+Volume}} (float valore\+Slider)
+\begin{DoxyCompactList}\small\item\em Aggiorna il mixer e salva il valore quando lo slider viene mosso. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Audio\+Mixer \mbox{\hyperlink{class_volume_manager_a2bdb58ac6f9febc08c7d5c414273fc12}{mixer}}
+\item 
+Slider \mbox{\hyperlink{class_volume_manager_a94b393a14ae15ea0fdf705c12ae2ec8d}{volume\+Slider}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_volume_manager_a611e15b11e9cbbf9d483b3d792cc97f5}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Inizializza il volume all\textquotesingle{}avvio caricando i dati salvati. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_volume_manager_a11b426b96719ec5755ece3f5168539f2}{Applica\+Volume\+Al\+Mixer}} (float valore)
+\begin{DoxyCompactList}\small\item\em Converte il valore lineare in Decibel e aggiorna l\textquotesingle{}Audio\+Mixer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_volume_manager_a2f023fa917ac8af0c1b7b35595e6fbca}{mixer\+Parameter}} = "{}Volume\+Generale"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Gestisce il volume audio del gioco, sincronizzando Slider, Audio\+Mixer e salvataggi locali. 
+
+\label{doc-func-members}
+\Hypertarget{class_volume_manager_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_volume_manager_a11b426b96719ec5755ece3f5168539f2}\index{VolumeManager@{VolumeManager}!ApplicaVolumeAlMixer@{ApplicaVolumeAlMixer}}
+\index{ApplicaVolumeAlMixer@{ApplicaVolumeAlMixer}!VolumeManager@{VolumeManager}}
+\doxysubsubsection{\texorpdfstring{ApplicaVolumeAlMixer()}{ApplicaVolumeAlMixer()}}
+{\footnotesize\ttfamily \label{class_volume_manager_a11b426b96719ec5755ece3f5168539f2} 
+void Volume\+Manager.\+Applica\+Volume\+Al\+Mixer (\begin{DoxyParamCaption}\item[{float}]{valore}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Converte il valore lineare in Decibel e aggiorna l\textquotesingle{}Audio\+Mixer. 
+
+La formula utilizzata è\+: \$dB = \textbackslash{}log\+\_\+\{10\}(valore) \textbackslash{}cdot 20\$
+
+
+\begin{DoxyImageNoCaption}
+  \mbox{\includegraphics[width=\textwidth,height=\textheight/2,keepaspectratio=true]{dot_inline_dotgraph_14}}
+\end{DoxyImageNoCaption}
+ Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_volume_manager_a11b426b96719ec5755ece3f5168539f2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_volume_manager_aa56861472a6a3d54e7d36bceb05e0d80}\index{VolumeManager@{VolumeManager}!CambiaVolume@{CambiaVolume}}
+\index{CambiaVolume@{CambiaVolume}!VolumeManager@{VolumeManager}}
+\doxysubsubsection{\texorpdfstring{CambiaVolume()}{CambiaVolume()}}
+{\footnotesize\ttfamily \label{class_volume_manager_aa56861472a6a3d54e7d36bceb05e0d80} 
+void Volume\+Manager.\+Cambia\+Volume (\begin{DoxyParamCaption}\item[{float}]{valore\+Slider}{}\end{DoxyParamCaption})}
+
+
+
+Aggiorna il mixer e salva il valore quando lo slider viene mosso. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em valore\+Slider} & Valore compreso tra 0 e 1.\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_volume_manager_aa56861472a6a3d54e7d36bceb05e0d80_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_volume_manager_a611e15b11e9cbbf9d483b3d792cc97f5}\index{VolumeManager@{VolumeManager}!Start@{Start}}
+\index{Start@{Start}!VolumeManager@{VolumeManager}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily \label{class_volume_manager_a611e15b11e9cbbf9d483b3d792cc97f5} 
+void Volume\+Manager.\+Start (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Inizializza il volume all\textquotesingle{}avvio caricando i dati salvati. 
+
+
+\begin{DoxyImageNoCaption}
+  \mbox{\includegraphics[width=\textwidth,height=\textheight/2,keepaspectratio=true]{dot_inline_dotgraph_15}}
+\end{DoxyImageNoCaption}
+ Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_volume_manager_a611e15b11e9cbbf9d483b3d792cc97f5_cgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_volume_manager_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_volume_manager_a2bdb58ac6f9febc08c7d5c414273fc12}\index{VolumeManager@{VolumeManager}!mixer@{mixer}}
+\index{mixer@{mixer}!VolumeManager@{VolumeManager}}
+\doxysubsubsection{\texorpdfstring{mixer}{mixer}}
+{\footnotesize\ttfamily \label{class_volume_manager_a2bdb58ac6f9febc08c7d5c414273fc12} 
+Audio\+Mixer Volume\+Manager.\+mixer}
+
+\Hypertarget{class_volume_manager_a2f023fa917ac8af0c1b7b35595e6fbca}\index{VolumeManager@{VolumeManager}!mixerParameter@{mixerParameter}}
+\index{mixerParameter@{mixerParameter}!VolumeManager@{VolumeManager}}
+\doxysubsubsection{\texorpdfstring{mixerParameter}{mixerParameter}}
+{\footnotesize\ttfamily \label{class_volume_manager_a2f023fa917ac8af0c1b7b35595e6fbca} 
+string Volume\+Manager.\+mixer\+Parameter = "{}Volume\+Generale"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_volume_manager_a94b393a14ae15ea0fdf705c12ae2ec8d}\index{VolumeManager@{VolumeManager}!volumeSlider@{volumeSlider}}
+\index{volumeSlider@{volumeSlider}!VolumeManager@{VolumeManager}}
+\doxysubsubsection{\texorpdfstring{volumeSlider}{volumeSlider}}
+{\footnotesize\ttfamily \label{class_volume_manager_a94b393a14ae15ea0fdf705c12ae2ec8d} 
+Slider Volume\+Manager.\+volume\+Slider}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/semer/\+Documents/\+Git\+Hub/\+Escape\+Room/\+Assets/scripts/\mbox{\hyperlink{_volume_manager_8cs}{Volume\+Manager.\+cs}}\end{DoxyCompactItemize}
